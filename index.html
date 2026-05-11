@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CodeCollab — Collaborative Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+</html>
+
+<div class="app">
+  <div class="topbar">
+    <div class="logo">
+      <div class="logo-dot"></div>
+      <div class="logo-text">CodeCollab</div>
+      <div class="room-badge">ROOM #4821</div>
+      <div class="avatars">
+        <div class="av" style="background:#1d4ed8;color:#dbeafe;">NK</div>
+        <div class="av" style="background:#059669;color:#d1fae5;margin-left:-6px;">CH</div>
+      </div>
+    </div>
+
+    <div class="right-controls">
+      <div class="live-indicator">
+        <div class="live-dot"></div>
+        <div class="live-text">LIVE</div>
+      </div>
+
+      <select class="lang-select">
+        <option>JavaScript</option>
+        <option>Python</option>
+        <option>C++</option>
+      </select>
+
+      <button class="icon-btn" id="themeBtn">☾</button>
+      <button class="icon-btn">⚙</button>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="sidebar">
+      <div class="section-label">Files</div>
+
+      <div class="file-item active">
+        <div class="file-icon">📄</div>
+        <div class="file-name">index.js</div>
+        <div class="lang-tag">JS</div>
+      </div>
+
+      <div class="file-item">
+        <div class="file-icon">🎨</div>
+        <div class="file-name">style.css</div>
+        <div class="lang-tag">CSS</div>
+      </div>
+
+      <div class="file-item">
+        <div class="file-icon">📝</div>
+        <div class="file-name">README.md</div>
+        <div class="lang-tag">MD</div>
+      </div>
+
+      <div class="collab-section">
+        <div class="section-label">Collaborators</div>
+
+        <div class="user-row">
+          <div class="av" style="background:#1d4ed8;color:#dbeafe;">NK</div>
+          <div class="user-name">Nikita</div>
+          <div class="user-status">🟢</div>
+        </div>
+
+        <div class="user-row">
+          <div class="av" style="background:#059669;color:#d1fae5;">CH</div>
+          <div class="user-name">Chahat</div>
+          <div class="user-status">🟢</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="tabs">
+        <div class="tab active">index.js</div>
+        <div class="tab">style.css</div>
+      </div>
+
+      <div class="editor">
+<pre><code id="codeBlock">function greet(name) {
+  return `Hello, ${name}`;
+}
+
+console.log(greet("CodeCollab"));</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
